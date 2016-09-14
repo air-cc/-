@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>表单</title>
+</head>
+<body>
+
+<form action="http://some.net/post-data" method="post">
+  单行输入框 <input type="text" name="inputsomething" maxlength="10" />
+  <br>
+  密码录入 <input type="password" />
+  <br>
+  文本域 <textarea name="multi-text" id="" cols="30" rows="10">default text</textarea>
+  <br>
+  单选按钮1 <input type="radio" name="radio-group" value="1" />
+  单选按钮2 <input type="radio" name="radio-group" value="2" checked="checked" />
+  单选按钮3 <input type="radio" name="radio-group" value="3" />
+  <br>
+  复选框1 <input type="checkbox" name="checkbox-group" value="1">
+  复选框2 <input type="checkbox" name="checkbox-group" value="2" checked="checked" >
+  复选框3 <input type="checkbox" name="checkbox-group" value="3">
+  <br>
+  下拉列表框
+  <select name="select-somthing" id="">
+    <option value="1">选项1</option>
+    <option value="2" selected="selected" >选项2</option>
+    <option value="3">选项3</option>
+  </select>
+  <br>
+  多选框
+  <select name="select-multi-things" id="" multiple>
+    <option value="1">选项1</option>
+    <option value="2">选项2</option>
+    <option value="3">选项3</option>
+  </select>
+  <br>
+  文件上传
+  <input type="file" name="upload-file">
+  <br>
+  提交按钮
+  <input type="submit" value="提交">
+  <br>
+  图片按钮
+  <input type="image" src="./resource/photo-100.jpg" alt="photo">
+  <br>
+  按钮
+  <button>hello-this-is-a-button</button>
+  <br>
+  隐藏控件
+  <input type="hidden" name="hidden-input" value="you-can-not-see-me" />
+  <br>
+  控件组
+  <fieldset>
+    <legend>控件组标题</legend>
+    标签控件 使用方式一：
+    <label>
+      标签
+      <input type="radio">
+    </label>
+    <br>
+    标签控件 使用方式二：
+    <label for="input-id">标签</label>
+    <input type="checkbox" id="input-id">
+  </fieldset>
+  <br>
+  日期控件
+  <input type="date" name="data-input">
+
+  email输入控件
+  <input type="email" name="email-input">
+
+  url输入控件
+  <input type="url" name="url-input">
+
+  搜索控件
+  <input type="search" name="search-input">
+
+</form>
+
+</body>
+</html>

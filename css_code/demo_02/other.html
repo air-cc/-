@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>子元素的选择</title>
+  <style>
+    .special p {
+      color: red;
+      font-size: 16px;
+    }
+
+    .special > p {
+      background-color: green;
+    }
+
+    .special > p:first-child {
+      font-size: 25px;
+    }
+
+    .special > p:first-of-type {
+      margin-left: 100px;
+    }
+
+    .special p:nth-child(2n + 2) {
+      margin-right: 200px;
+    }
+  </style>
+</head>
+<body>
+<div class="special">
+  <p>say something - 1</p>
+  <p>say something - 2</p>
+</div>
+
+<div class="special">
+  <div>
+    <p>say otherthing - 1</p>
+  </div>
+  <p>say otherthing - 2</p>
+  <p>say otherthing - 3</p>
+</div>
+
+</body>
+</html>
