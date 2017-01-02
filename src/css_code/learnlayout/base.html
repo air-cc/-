@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>display的使用</title>
+  <style>
+    .cvrt-to-block {
+      display: block;
+    }
+
+    .cvrt-to-inline {
+      display: inline;
+    }
+
+    .cvrt-to-none {
+      display: none;
+    }
+
+    .cvrt-to-display {
+      visibility: hidden;
+    }
+  </style>
+</head>
+<body>
+<h2>块级元素</h2>
+<div>hello world</div>
+
+<h2>内联元素</h2>
+<span>hello world</span>
+
+
+<h2>转变元素显示样式</h2>
+<hr>
+hello<span class="cvrt-to-block">内联元素转块级元素</span>world
+<hr>
+
+<hr>
+hello<div class="cvrt-to-inline">块级元素转内联元素</div>world
+<hr>
+
+<hr>
+hello<div class="cvrt-to-none">从页面中去除该元素块</div>world
+<hr>
+
+<hr>
+hello<span class="cvrt-to-display">不显示，但不保留空间</span>world
+<hr>
+</body>
+</html>

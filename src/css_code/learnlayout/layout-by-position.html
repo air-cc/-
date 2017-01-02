@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>position</title>
+  <style>
+    body {
+      border: solid yellow 2px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      border: solid grey 5px;
+      position: relative;
+      overflow: auto;
+    }
+
+    .nav {
+      border: solid red 5px;
+      position: absolute;
+      width: 100px;
+      left: 0px;
+    }
+
+    .section {
+      border: solid blue 5px;
+      margin-left: 110px;
+      /*position: relative;*/
+      /*left: 101px;*/
+    }
+
+    .footer {
+      height: 100px;
+      border: solid green 5px;
+      position: fixed;
+      bottom: 10px;
+      left: 0px;
+      right: 0px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="nav">
+    <ul>
+      <li>menu-1</li>
+      <li>menu-2</li>
+      <li>menu-3</li>
+    </ul>
+  </div>
+  <div class="section">
+    章节一
+  </div>
+
+  <div class="section">
+    章节二
+    <ul>
+      <li>hello</li>
+      <li>hello</li>
+      <li>hello</li>
+      <li>hello</li>
+      <li>hello</li>
+      <li>hello</li>
+      <li>hello</li>
+      <li>hello</li>
+      <li>hello</li>
+      <li>hello</li>
+      <li>hello</li>
+      <li>hello</li>
+      <li>hello</li>
+      <li>hello</li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    这是底部
+  </div>
+</div>
+
+</body>
+</html>

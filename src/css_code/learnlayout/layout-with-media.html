@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>media</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .container {
+      border: solid red 3px;
+      overflow: auto;
+    }
+
+    .nav {
+      border: solid blue 3px;
+    }
+
+    .section {
+      border: solid green 3px;
+    }
+
+    @media screen and (min-width: 600px) {
+      .nav {
+        float: left;
+        width: 25%;
+      }
+
+      .section {
+        margin-left: 25%;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .nav li {
+        display: inline;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="nav">
+    <ul>
+      <li>menu-1</li>
+      <li>menu-2</li>
+      <li>menu-3</li>
+      <li>menu-4</li>
+    </ul>
+  </div>
+  <div class="section">
+    章节一
+  </div>
+  <div class="section">
+    章节二
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>flex</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    .container {
+      border: solid red 3px;
+      display: flex;
+    }
+
+    .box {
+      border: solid pink 3px;
+    }
+
+    .nav {
+      border: solid blue 3px;
+      width: 200px;
+    }
+
+    .column {
+      border: solid green 3px;
+      flex: 1;
+    }
+
+    .section {
+      border: solid yellow 3px;
+    }
+
+    .initial {
+      flex: initial;
+      width: 200px;
+      min-width: 80px;
+    }
+
+    .none {
+      flex: none;
+      width: 200px;
+    }
+
+    .flex1 {
+      flex: 1;
+    }
+
+    .flex2 {
+      flex: 2;
+    }
+
+    .container-center {
+      height: 100px;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+
+</head>
+<body>
+<div class="container">
+  <div class="nav">
+    <ul>
+      <li>menu-1</li>
+      <li>menu-2</li>
+      <li>menu-3</li>
+    </ul>
+  </div>
+  <div class="column">
+    <div class="section">
+      <p>hello world</p>
+    </div>
+    <div class="section">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="box initial">在固定值间切换</div>
+  <div class="box none">固定值</div>
+  <div class="box flex1">一定比例</div>
+  <div class="box flex2">一定比例</div>
+</div>
+
+
+<div class="container container-center">
+  <div class="box">居中</div>
+</div>
+
+</body>
+</html>

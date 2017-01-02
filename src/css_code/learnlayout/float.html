@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>float</title>
+  <style>
+    .border {
+      border: solid red 3px;
+    }
+
+    .float {
+      float: right;
+      margin: 0 0 0em 1em;
+    }
+
+    .float-clear {
+      /*clear: both;*/
+      clear: right;
+    }
+
+    .container {
+      margin-bottom: 50px;
+      border: solid #6AC5AC 3px;
+      /*height: 200px;*/
+    }
+
+    .clearfix {
+      overflow: auto;
+    }
+  </style>
+</head>
+<body>
+<h2>float与clear</h2>
+<p>hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world</p>
+<img class="float" src="./resource/ilta.png" alt="">
+<p class="border">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+
+<p class="border">
+  hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-
+</p>
+
+<p class="float-clear border">
+  hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-hello world-
+</p>
+
+<h2>float与clearfix</h2>
+<div class="container">
+  <img src="./resource/ilta.png" class="float" alt="">
+  <p>
+    这里图片溢出包含它的 container
+  </p>
+</div>
+
+<div class="container clearfix">
+  <img src="./resource/ilta.png" class="float" alt="">
+  <p>
+    这里图片溢出包含它的 container
+  </p>
+</div>
+</body>
+</html>

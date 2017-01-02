@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>inline-block</title>
+  <style>
+    .container {
+      border: solid red 3px;
+      overflow: auto;
+    }
+
+    .container-none {
+      display: none;
+    }
+
+    .box {
+      border: solid blue 3px;
+      width: 200px;
+      height: 100px;
+      margin: 1em;
+    }
+
+    .box-bottom {
+      border: solid green 3px;
+    }
+
+    .box-float {
+      float: left;
+    }
+
+    .after-box {
+      clear: both;
+    }
+
+    .inline-block {
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="box box-float">
+    <p>hello world</p>
+  </div>
+  <div class="box box-float">
+    <p>hello world</p>
+  </div>
+  <div class="box box-float">
+    <p>hello world</p>
+  </div>
+  <div class="box box-float">
+    <p>hello world</p>
+  </div>
+  <div class="box box-float">
+    <p>hello world</p>
+  </div>
+  <div class="box box-float">
+    <p>hello world</p>
+  </div>
+  <div class="box box-float">
+    <p>hello world</p>
+  </div>
+  <div class="box box-float">
+    <p>hello world</p>
+  </div>
+  <div class="box box-float">
+    <p>hello world</p>
+  </div>
+  <div class="box box-float">
+    <p>hello world</p>
+  </div>
+
+  <div class="box-bottom after-box">
+    <p>使用 float</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="box inline-block">
+    <p>hello world</p>
+  </div>
+  <div class="box inline-block">
+    <p>hello world</p>
+  </div>
+  <div class="box inline-block">
+    <p>hello world</p>
+  </div>
+  <div class="box inline-block">
+    <p>hello world</p>
+  </div>
+  <div class="box inline-block">
+    <p>hello world</p>
+  </div>
+  <div class="box inline-block">
+    <p>hello world</p>
+  </div>
+  <div class="box inline-block">
+    <p>hello world</p>
+  </div>
+  <div class="box inline-block">
+    <p>hello world</p>
+  </div>
+  <div class="box inline-block">
+    <p>hello world</p>
+  </div>
+  <div class="box inline-block">
+    <p>hello world</p>
+  </div>
+
+  <div class="box-bottom">
+    <p>使用 inline-block</p>
+  </div>
+</div>
+
+</body>
+</html>

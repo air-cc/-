@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>inline-block</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      /*margin: 0;*/
+      /*padding: 0; */
+    }
+
+
+    .container {
+      border: solid red 3px;
+      /*width: 100px;*/
+      overflow: auto;
+    }
+
+    .nav {
+      border: solid blue 3px;
+      display: inline-block;
+      overflow: auto;
+      vertical-align: top;
+      width: 25%;
+    }
+
+    .column {
+      border: solid green 3px;
+      display: inline-block;
+      vertical-align: top;
+      width: 75%;
+    }
+
+    .section {
+      border: solid yellow 3px;
+    }
+  </style>
+
+</head>
+<body>
+<div class="container">
+  <div class="nav">
+    <ul>
+      <li>menu-1</li>
+      <li>menu-2</li>
+      <li>menu-3</li>
+    </ul>
+  </div>
+  <div class="column">
+    <div class="section">
+      章节一
+    </div>
+    <div class="section">
+      章节二
+    </div>
+  </div>
+</div>
+</body>
+</html>
